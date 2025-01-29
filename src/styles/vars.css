@@ -1,0 +1,23 @@
+/* TODO: FAÇA UM ESQUEMA DE CORES MELHOR! */
+/* feito na aula 3 */
+:root {
+  /* FONTE */
+  --font-dm-sans: "DM Sans", sans-serif;
+  /* CORES FONTE */
+  --color-font-primary: #b3b3b3;
+  --color-font-secondary: #a7a7a7;
+  --color-font-light: #fff;
+  --color-font-dark: #000;
+  /* CORES DE FUNDO */
+  --color-background-main: #cb6;
+  --color-background-widget: #121212;
+  --color-background-light: #fff;
+  --color-background-dark2: #242424;
+  --color-background-icon: #131313;
+  --color-background-arrow: rgba(0, 0, 0, 0.7);
+  /* CORES DE BORDA */
+  --color-border-button: #878787;
+  /* GRADIENTES */
+  --grad-black-to-yellow: linear-gradient(to right, #261910, #fdde2b);
+  /* ^^ temporário */
+}

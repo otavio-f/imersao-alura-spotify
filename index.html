@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone Imersão</title>
 
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/vars.css" />
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="src/styles/main-content.css" />
 
     <link
       rel="stylesheet"
@@ -22,12 +24,16 @@
     />
   </head>
   <body>
+    <!-- aula 1 -->
     <div class="sidebar">
-      <!-- aula 1 -->
+      <!-- sidebar links rápidos -->
       <nav class="sidebar__navigation">
         <div class="logo">
           <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="Logo do spotify" />
+            <img
+              src="./src/assets/icons/logo-spotify.png"
+              alt="Logo do spotify"
+            />
           </a>
         </div>
         <ul>
@@ -47,6 +53,7 @@
       </nav>
       <!-- aula 2 -->
       <div class="library">
+        <!-- biblioteca pessoal -->
         <div class="library__content">
           <button class="library__button">
             <span class="fa fas fa-book"> </span>
@@ -80,6 +87,60 @@
         </div>
       </div>
     </div>
+
+    <!-- aula 3 -->
+    <main class="main-container">
+      <!-- botões de navegação -->
+      <nav class="header__navigation">
+        <div class="navigation">
+          <button class="arrow-left">
+            <img
+              src="src/assets/icons/small-left.png"
+              alt="Seta à esquerda"
+              srcset=""
+            />
+          </button>
+          <button class="arrow-right">
+            <img
+              src="src/assets/icons/small-right.png"
+              alt="Seta à direita"
+              srcset=""
+            />
+          </button>
+        </div>
+
+        <!-- caixa de pesquisa -->
+        <div class="header__search">
+          <img src="src/assets/icons/search.png" alt="" srcset="" />
+          <input
+            id="search-input"
+            type="text"
+            maxlength="256"
+            placeholder="O que você quer ouvir?"
+          />
+        </div>
+
+        <!-- botões de login -->
+        <div class="header__login">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+      </nav>
+
+      <!-- desafio aula 3 -->
+      <div class="playlist-container">
+        <div id="result-playlists">
+          <div class="playlist">
+            <h1 id="greeting">Boas vindas</h1>
+            <h2 class="greeting-subtitle">Navegar por todas as seções</h2>
+          </div>
+
+          <!-- cards -->
+        </div>
+      </div>
+    </main>
+
+    <!-- footer do desafio da aula 2 -->
     <footer class="disclaimer-premium">
       <div class="text">
         <p class="disclaimer-premium__title">Testar o premium de graça</p>
